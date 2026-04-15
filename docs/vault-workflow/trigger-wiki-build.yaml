@@ -12,7 +12,7 @@ jobs:
   trigger:
     runs-on: ubuntu-latest
     steps:
-      - name: Dispatch build to madhyamaka-wiki
+      - name: Dispatch build to pramana-wiki
         run: |
           curl -L \
             -sS \
@@ -21,5 +21,5 @@ jobs:
             -H "Accept: application/vnd.github+json" \
             -H "Authorization: Bearer ${{ secrets.QUARTZ_DISPATCH_PAT }}" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
-            https://api.github.com/repos/nickpettican/madhyamaka-wiki/dispatches \
+            https://api.github.com/repos/nickpettican/pramana-wiki/dispatches \
             -d '{"event_type":"vault-updated"}'

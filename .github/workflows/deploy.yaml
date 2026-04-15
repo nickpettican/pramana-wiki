@@ -34,7 +34,7 @@ jobs:
       - name: Clone vault
         env:
           VAULT_PAT: ${{ secrets.VAULT_PAT }}
-        run: git clone --depth 1 "https://$VAULT_PAT@github.com/nickpettican/madhyamaka-wiki-vault.git" _vault
+        run: git clone --depth 1 "https://$VAULT_PAT@github.com/nickpettican/pramana-wiki-vault.git" _vault
 
       - name: Copy wiki content
         run: |
