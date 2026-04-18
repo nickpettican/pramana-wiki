@@ -13,6 +13,11 @@ li.section-li {
     display: grid;
     grid-template-columns: fit-content(8em) 3fr 1fr;
 
+    // If `.meta` is removed, shift to a 2-column layout (desc | tags)
+    &:not(:has(> .meta)) {
+      grid-template-columns: 3fr 1fr;
+    }
+
     @media all and ($mobile) {
       & > .tags {
         display: none;
@@ -33,6 +38,11 @@ li.section-li {
 // modifications in popover context
 .popover .section {
   grid-template-columns: fit-content(8em) 1fr !important;
+
+  // If `.meta` is removed, drop the date column entirely
+  &:not(:has(> .meta)) {
+    grid-template-columns: 1fr !important;
+  }
 
   & > .tags {
     display: none;
