@@ -24,31 +24,31 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+        header: "Noto Sans",
+        body: "Noto Sans", // placeholder so only Noto Sans is fetched; --bodyFont is overridden to Georgia in custom.scss
         code: "IBM Plex Mono",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#faf6f1", // linen background (Middle Way Musings)
+          lightgray: "#e6ddd2",
+          gray: "#b8ac9c",
+          darkgray: "#33312e", // body text
+          dark: "#1a191b", // headings
+          secondary: "#1a191b", // links + active — near-black (monochrome)
+          tertiary: "#8a8178", // visited / tags / hover
+          highlight: "rgba(180, 160, 120, 0.15)",
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#1a191b", // background (Middle Way Musings dark)
+          lightgray: "#312f31",
+          gray: "#6a655f",
+          darkgray: "#d8d2c8", // body text
+          dark: "#f3efe9", // headings
+          secondary: "#f3efe9", // links + active — near-white
+          tertiary: "#a89f93",
+          highlight: "rgba(180, 160, 120, 0.12)",
           textHighlight: "#b3aa0288",
         },
       },

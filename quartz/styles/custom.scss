@@ -1,3 +1,13 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// Middle Way Musings feel: Georgia serif body + title, Noto Sans bold sans-serif headings.
+// Georgia isn't a Google Font, so it's set here as a system stack rather than via the config.
+:root {
+  --titleFont: Georgia, Cambria, "Times New Roman", Times, serif;
+  --bodyFont: Georgia, Cambria, "Times New Roman", Times, serif;
+  --headerFont: "Noto Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
