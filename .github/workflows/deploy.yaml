@@ -41,9 +41,9 @@ jobs:
           [ -d "_vault/wiki" ] || { echo "::error::_vault/wiki not found in vault repo"; exit 1; }
           mkdir -p content
           cp -r _vault/wiki/. content/
-          ls -la content/
           rm content/log.*
           node scripts/clean-content.mjs content/
+          ls -la content/
 
       - name: Remove vault clone
         if: always()
